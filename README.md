@@ -1,5 +1,6 @@
 # android-lite-auto
-lite your android !
+
+lite your android ，the code is on the way~ !
 
 LiteAuto是一个代码生成框架，思路参考 JakeWharton 的开源项目 ButterKnife，在它的思路基础添加了一些自己的想法，从0到1设计并实现的。
 
