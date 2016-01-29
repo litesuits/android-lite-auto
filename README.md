@@ -79,6 +79,7 @@ public class LiteMainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         // 无需findViewById，也不需要为单个变量添加注解，Activity级别添加一个注解即可。
+        // 框架会分析类和成员变量，自动生成代码
         AutoMan.activateThis(this);
     }
 
