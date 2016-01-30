@@ -42,17 +42,17 @@ public class MainActivity extends Activity {
 
         tvLabel1.setOnClickListener(new View.OnClickListener() {
 
-            @Override public void onClick(View v) {
+            @Override 
+            public void onClick(View v) {
                 tvLabel1.setText("TvLabel Clicked!");
-                button.setText("TvLabel Clicked!");
             }
         });
 
         tvLabel2.setOnClickListener(new View.OnClickListener() {
 
-            @Override public void onClick(View v) {
+            @Override 
+            public void onClick(View v) {
                 tvLabel2.setText("TvLabel 1 Clicked!");
-                button.setText("TvLabel 1 Clicked!");
             }
         });
     }
@@ -85,12 +85,10 @@ public class LiteMainActivity extends Activity {
 
     public void clickTvLabel1(View view) {
         tvLabel1.setText("TvLabel Clicked!");
-        button.setText("TvLabel Clicked!");
     }
 
     public void clickTvLabel2(View view) {
         tvLabel2.setText("TvLabel Clicked!");
-        button.setText("TvLabel Clicked!");
     }
 
 }
