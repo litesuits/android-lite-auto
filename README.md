@@ -44,7 +44,7 @@ public class MainActivity extends Activity {
 
             @Override 
             public void onClick(View v) {
-                tvLabel1.setText("TvLabel Clicked!");
+                tvLabel1.setText("TvLabel 1 Clicked!");
             }
         });
 
@@ -52,7 +52,8 @@ public class MainActivity extends Activity {
 
             @Override 
             public void onClick(View v) {
-                tvLabel2.setText("TvLabel 1 Clicked!");
+                tvLabel2.setText("TvLabel 2 Clicked!");
+                tvLabel3.setText("show me, show me pls!");
             }
         });
     }
@@ -63,6 +64,8 @@ public class MainActivity extends Activity {
 那么，使用 LiteAuto 的代码是这样：
 
 ```java
+// 无需findViewById，也不需要为单个变量添加注解，Activity级别添加一个注解即可。
+// 框架会分析类和成员变量，自动生成代码
 @AutoLite
 public class LiteMainActivity extends Activity {
 
@@ -78,8 +81,6 @@ public class LiteMainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        // 无需findViewById，也不需要为单个变量添加注解，Activity级别添加一个注解即可。
-        // 框架会分析类和成员变量，自动生成代码
         AutoMan.activateThis(this);
     }
 
@@ -89,6 +90,7 @@ public class LiteMainActivity extends Activity {
 
     public void clickTvLabel2(View view) {
         tvLabel2.setText("TvLabel Clicked!");
+        tvLabel3.setText("show me, show me pls!");
     }
 
 }
